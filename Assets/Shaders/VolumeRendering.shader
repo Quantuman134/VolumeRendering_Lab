@@ -12,8 +12,6 @@ Shader "VolumeRendering/VolumeRendering"
         _MaxVal("Max val", Range(0.0, 1.0)) = 1.0
 		[HideInInspector] _LightColor(" ", Color) = (0.0, 0.0, 0.0, 0.0)
 		[HideInInspector] _LightDirection(" ", Vector) = (0.0, 0.0, 0.0, 0.0)
-		[HideInInspector] _SceneCameraPos(" ", Vector) = (0.0, 0.0, 0.0, 0.0)
-		[HideInInspector] _ObjectPos(" ", Vector) = (0.0, 0.0, 0.0, 0.0)
 	}
 
 	SubShader

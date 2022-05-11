@@ -156,13 +156,6 @@ namespace UnityVolumeRendering
             meshRenderer.sharedMaterial.SetFloat("_MinVal", visibilityWindow.x);
             meshRenderer.sharedMaterial.SetFloat("_MaxVal", visibilityWindow.y);
             meshRenderer.sharedMaterial.SetColor("_LightColor", lights[0].color.linear * lights[0].intensity);
-            meshRenderer.sharedMaterial.SetVector("_LightDirection", -lights[0].transform.forward);
-
-            if (editorCamera != null)
-            {
-                meshRenderer.sharedMaterial.SetVector("_SceneCameraPos", editorCamera.transform.position);
-                meshRenderer.sharedMaterial.SetVector("_ObjectPos", gameObject.transform.position);
-            }
         }
 
         //保证相机与缩放后的数据相对位置不变
